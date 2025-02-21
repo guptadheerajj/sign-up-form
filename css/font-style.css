@@ -4,7 +4,7 @@
 	font-family: "Josefin Sans";
 	font-style: normal;
 	font-weight: 400;
-	src: url("./assets/fonts/josefin-sans-v32-latin-regular.woff2")
+	src: url("../assets/fonts/josefin-sans-v32-latin/josefin-sans-v32-latin-regular.woff2")
 		format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* josefin-sans-500 - latin */
@@ -13,7 +13,8 @@
 	font-family: "Josefin Sans";
 	font-style: normal;
 	font-weight: 500;
-	src: url("./assets/fonts/josefin-sans-v32-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	src: url("../assets/fonts/josefin-sans-v32-latin/josefin-sans-v32-latin-500.woff2")
+		format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* josefin-sans-600 - latin */
 @font-face {
@@ -21,7 +22,8 @@
 	font-family: "Josefin Sans";
 	font-style: normal;
 	font-weight: 600;
-	src: url("./assets/fonts/josefin-sans-v32-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	src: url("../assets/fonts/josefin-sans-v32-latin/josefin-sans-v32-latin-600.woff2")
+		format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* josefin-sans-700 - latin */
 @font-face {
@@ -29,7 +31,8 @@
 	font-family: "Josefin Sans";
 	font-style: normal;
 	font-weight: 700;
-	src: url("./assets/fonts/josefin-sans-v32-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	src: url("../assets/fonts/josefin-sans-v32-latin/josefin-sans-v32-latin-700.woff2")
+		format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* lato-regular - latin */
@@ -38,7 +41,8 @@
 	font-family: "Lato";
 	font-style: normal;
 	font-weight: 400;
-	src: url("./assets/fonts/lato-v24-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	src: url("../assets/fonts/lato-v24-latin/lato-v24-latin-regular.woff2")
+		format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* lato-700 - latin */
 @font-face {
@@ -46,7 +50,8 @@
 	font-family: "Lato";
 	font-style: normal;
 	font-weight: 700;
-	src: url("./assets/fonts/lato-v24-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	src: url("../assets/fonts/lato-v24-latin/lato-v24-latin-700.woff2")
+		format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* lato-900 - latin */
 @font-face {
@@ -54,7 +59,8 @@
 	font-family: "Lato";
 	font-style: normal;
 	font-weight: 900;
-	src: url("./assets/fonts/lato-v24-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	src: url("../assets/fonts/lato-v24-latin/lato-v24-latin-900.woff2")
+		format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* stick-no-bills-regular - latin */
@@ -63,7 +69,7 @@
 	font-family: "Stick No Bills";
 	font-style: normal;
 	font-weight: 400;
-	src: url("./assets/fonts/stick-no-bills-v15-latin-regular.woff2")
+	src: url("../assets/fonts/stick-no-bills-v15-latin/stick-no-bills-v15-latin-regular.woff2")
 		format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* stick-no-bills-600 - latin */
@@ -72,7 +78,8 @@
 	font-family: "Stick No Bills";
 	font-style: normal;
 	font-weight: 600;
-	src: url("./assets/fonts/stick-no-bills-v15-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	src: url("../assets/fonts/stick-no-bills-v15-latin/stick-no-bills-v15-latin-600.woff2")
+		format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* stick-no-bills-700 - latin */
 @font-face {
@@ -80,7 +87,8 @@
 	font-family: "Stick No Bills";
 	font-style: normal;
 	font-weight: 700;
-	src: url("./assets/fonts/stick-no-bills-v15-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	src: url("../assets/fonts/stick-no-bills-v15-latin/stick-no-bills-v15-latin-700.woff2")
+		format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* stick-no-bills-800 - latin */
 @font-face {
@@ -88,5 +96,6 @@
 	font-family: "Stick No Bills";
 	font-style: normal;
 	font-weight: 800;
-	src: url("./assets/fonts/stick-no-bills-v15-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	src: url("../assets/fonts/stick-no-bills-v15-latin/stick-no-bills-v15-latin-800.woff2")
+		format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
