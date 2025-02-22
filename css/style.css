@@ -1,17 +1,20 @@
 :root {
 	--btn-bg-color: #596d48;
-	--input-border-color: #e5e7eb;
+	--input-border-clr: #e5e7eb;
 	--bth-focus-border-clr: blue;
+	--body-bg-clr: #f9fafb;
 }
 
 body {
 	display: flex;
 	flex-flow: row nowrap;
 	font-family: "Lato";
+	font-family: "Josefin Sans";
+	background-color: var(--body-bg-clr);
 }
 
 .hero-container {
-	width: 30vw;
+	width: 40%;
 	background-image: url(../assets/imgs/tree-hero.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -49,6 +52,7 @@ body {
 
 .credits a:active {
 	text-decoration-line: underline;
+	color: red;
 }
 
 .logo-container {
@@ -81,9 +85,86 @@ body {
 }
 
 .main-section {
-	width: 70vw;
-	padding: 1rem 2rem;
 	min-height: 100vh;
+	padding-top: 36px;
+	flex: 1;
 }
 
+.main-section > p {
+	max-width: 65ch;
+	font-weight: 600;
+	font-size: 1.3rem;
+	padding: 0 2rem;
+}
 
+.main-section p:nth-child(3) {
+	margin: 24px 0 46px;
+	background-color: var();
+}
+
+form {
+	font-family: "Josefin Sans";
+	box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+form > div {
+	padding: 0 2rem;
+}
+
+.form-row {
+	display: flex;
+	gap: 70px;
+	margin-bottom: 1rem;
+}
+
+.form-row > .form-group {
+	width: min(260px, 40%);
+	flex-shrink: 0;
+	flex-grow: 0;
+}
+
+.form-group > label,
+.form-group > input {
+	display: block;
+	width: 100%;
+}
+
+.form-group > label {
+	font-size: 0.9rem;
+}
+
+.form-group > input {
+	border-radius: 6px;
+	height: 2em;
+	border: 1px solid var(--input-border-clr);
+}
+
+form > button {
+	background-color: var(--btn-bg-color);
+	color: white;
+	border-radius: 6px;
+	padding: 8px 32px;
+	margin: 1rem 2rem 2rem;
+	font-family: "Lato";
+}
+
+.main-section > div:last-child {
+	margin: 1rem 2rem;
+}
+
+.main-section > div:last-child > a {
+	color: blue;
+}
+
+.main-section > div:last-child > a:visited {
+	color: var(--btn-bg-color);
+}
+
+.main-section > div:last-child > a:hover {
+	text-decoration-line: none;
+}
+
+.main-section > div:last-child > a:active {
+	color: red;
+	text-decoration-line: underline;
+}
