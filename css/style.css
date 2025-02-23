@@ -3,6 +3,9 @@
 	--input-border-clr: #e5e7eb;
 	--bth-focus-border-clr: blue;
 	--body-bg-clr: #f9fafb;
+	--warning-clr: #ffcc00;
+	--valid-clr: #339900;
+	--invalid-clr: #cc3300;
 }
 
 body {
@@ -14,7 +17,7 @@ body {
 }
 
 .hero-container {
-	width: 40%;
+	width: 35%;
 	background-image: url(../assets/imgs/tree-hero.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -86,7 +89,6 @@ body {
 
 .main-section {
 	min-height: 100vh;
-	padding-top: 36px;
 	flex: 1;
 }
 
@@ -94,11 +96,15 @@ body {
 	max-width: 65ch;
 	font-weight: 600;
 	font-size: 1.3rem;
-	padding: 0 2rem;
+	margin: 2rem 2rem 0;
+}
+
+.main-section p:nth-child(2) {
+	margin-top: 8px;
 }
 
 .main-section p:nth-child(3) {
-	margin: 24px 0 46px;
+	margin: 1rem 2rem 1rem;
 	background-color: var();
 }
 
@@ -107,14 +113,23 @@ form {
 	box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
-form > div {
+form > .form-inputs {
 	padding: 0 2rem;
+}
+
+.form-inputs > p {
+	margin: 8px 0 24px;
+	font-size: 1.1em;
+}
+
+strong > span {
+	color: red;
 }
 
 .form-row {
 	display: flex;
 	gap: 70px;
-	margin-bottom: 1rem;
+	margin-bottom: 1.6rem;
 }
 
 .form-row > .form-group {
@@ -131,12 +146,24 @@ form > div {
 
 .form-group > label {
 	font-size: 0.9rem;
+	/* color: #504c4c; */
 }
 
-.form-group > input {
-	border-radius: 6px;
-	height: 2em;
-	border: 1px solid var(--input-border-clr);
+input + span {
+	display: block;
+	position: relative;
+}
+
+input:required + span::after {
+	content: "required";
+	font-size: 0.9rem;
+	color: white;
+	background-color: black;
+	padding: 0px 7px;
+
+	position: absolute;
+	top: -58px;
+	right: 10px;
 }
 
 form > button {
@@ -144,7 +171,7 @@ form > button {
 	color: white;
 	border-radius: 6px;
 	padding: 8px 32px;
-	margin: 1rem 2rem 2rem;
+	margin: 0 2rem 1rem;
 	font-family: "Lato";
 }
 
@@ -167,4 +194,47 @@ form > button {
 .main-section > div:last-child > a:active {
 	color: red;
 	text-decoration-line: underline;
+}
+
+.form-group > input {
+	font-size: 1rem;
+	border-radius: 6px;
+	height: 2em;
+	padding-left: 8px;
+	border: 2px solid var(--input-border-clr);
+}
+
+.form-group > input::placeholder {
+	font-size: 0.9em;
+}
+
+.form-group > input:hover:not(:focus) {
+	/* box-shadow: 3px 0 3px inset; */
+	box-shadow: 0px 0px 2px 0px;
+}
+
+/* .form-group > input:active {
+	border-top: 2px solid green;
+	border-left: 2px solid green;
+} */
+
+.form-group > input:focus {
+	border-bottom: 2px solid black;
+	border-right: 2px solid black;
+	outline: none;
+}
+
+.form-group > input:not(:placeholder-shown):valid {
+	border-bottom: 2px solid var(--valid-clr);
+	border-right: 2px solid var(--valid-clr);
+}
+
+.form-group > input:not(:placeholder-shown):invalid {
+	border-bottom: 2px solid var(--invalid-clr);
+	border-right: 2px solid var(--invalid-clr);
+}
+
+.form-group > input:focus:not(:placeholder-shown):invalid {
+	border-bottom: 2px solid var(--warning-clr);
+	border-right: 2px solid var(--warning-clr);
 }

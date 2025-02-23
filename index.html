@@ -32,37 +32,50 @@
 		<form action="" method="get" class="form-container">
 			<div class="form-inputs">
 				<h1>Let's do this!</h1>
+				<p>Required fields are labelled with "required"</p>
 				<div class="form-row">
 					<div class="form-group">
-						<label for="first-name">FIRST NAME</label>
-						<input type="text" name="first-name" id="first-name">
+						<label for="first-name"><span>FIRST NAME</label>
+						<input type="text" name="first-name" id="first-name" placeholder="John" minlength="3"
+							maxlength="15" required>
+						<span></span>
 					</div>
 
 					<div class="form-group">
 						<label for="last-name">LAST NAME</label>
-						<input type="text" name="last-name" id="last-name">
+						<input type="text" name="last-name" id="last-name" placeholder="Doe" minlength="3"
+							maxlength="15">
 					</div>
 				</div>
 
 				<div class="form-row">
 					<div class="form-group">
 						<label for="email">EMAIL</label>
-						<input type="email" name="email" id="email">
+						<input type="email" name="email" id="email" placeholder="email@address.com" maxlength="25"
+							title="Enter a valid email address" pattern="^[^@]+@[^@]+\.[^@]+$" required>
+						<span></span>
+
 					</div>
 					<div class="form-group">
 						<label for="phone-no">PHONE NUMBER</label>
-						<input type="tel" name="phone-no" id="phone-no">
+						<input type="tel" name="phone-no" id="phone-no" placeholder="9626483948"
+							title="Enter a 10-digit phone number" pattern="[0-9]{10}" minlength="10">
 					</div>
+					<!-- <input type="tel"  > -->
+
 				</div>
 
 				<div class="form-row">
 					<div class="form-group">
 						<label for="pwd">PASSWORD</label>
-						<input type="password" name="pwd" id="pwd">
+						<input type="password" name="pwd" id="pwd" placeholder="8+ characters" required minlength="9">
+						<span></span>
 					</div>
 					<div class="form-group">
 						<label for="cfrm-pwd">CONFIRM PASSWORD</label>
-						<input type="password" name="cfrm-pwd" id="cfrm-pwd">
+						<input type="password" name="cfrm-pwd" id="cfrm-pwd" placeholder="8+ characters" required
+							minlength="9">
+						<span></span>
 					</div>
 				</div>
 			</div>
